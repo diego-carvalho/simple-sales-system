@@ -44,13 +44,18 @@ class VendaController
         end
         return -1
     end
-end
 
-=begin
-    def editarProduto(arguments)
-        puts arguments['produto']
-        arguments['produto'].codigo= @produtos[arguments['pos']].codigo
-        puts "produto #{@produtos[arguments['pos']].nome} editado com sucesso."
-        @produtos[arguments['pos']] = arguments['produto']
+    def editarVenda(arguments)
+        arguments['venda'].codigo= @vendas[arguments['pos']].codigo
+        puts "venda #{arguments['pos']} editado com sucesso."
+        @vendas[arguments['pos']] = arguments['venda']
     end
-=end
+
+    def alteraItemVenda(itemVenda, pos, posCliente)
+        @vendas[pos].itens[posCliente] = itemVenda
+    end
+
+    def alteraCliente(cliente, pos)
+        @vendas[pos].cliente= cliente
+    end
+end

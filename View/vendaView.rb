@@ -12,12 +12,12 @@ class VendaView
         vendaMenu = Menu.new("Menu Venda")
         imprimirVenda = ImprimirVenda.new
         incluirVenda = IncluirVenda.new
-        #alterarVenda = AlterarVenda.new
+        alterarVenda = AlterarVenda.new
         removerVenda = RemoverVenda.new
 
         vendaMenu.addAction(imprimirVenda)
 		vendaMenu.addAction(incluirVenda)
-		#vendaMenu.addAction(alterarVenda)
+		vendaMenu.addAction(alterarVenda)
         vendaMenu.addAction(removerVenda)
 		
         vendaMenu.runAction
