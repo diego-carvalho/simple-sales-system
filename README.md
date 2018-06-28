@@ -11,5 +11,5 @@ Ruby from version 2.4+ available at: (https://rubyinstaller.org/downloads/).
 In your terminal run the command below. 
 
 ```
-$ ruby run.py
+$ ruby run.rb
 ```
